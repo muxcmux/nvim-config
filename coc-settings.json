@@ -1,0 +1,22 @@
+{
+  "solargraph.hover": true,
+  "solargraph.formatting": true,
+  "solargraph.diagnostics": true,
+  "diagnostic.virtualText": true,
+  "svelte.enable-ts-plugin": true,
+  "suggest.noselect": true,
+  "languageserver": {
+    "crystal": {
+      "command": "crystalline",
+      "args": [
+        "--stdio"
+      ],
+      "filetypes": [
+        "crystal"
+      ],
+      "rootPatterns": [
+        "shard.yml"
+      ]
+    }
+  }
+}

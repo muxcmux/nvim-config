@@ -1,0 +1,19 @@
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vimrc
+" Add a key to fix the fucking leap search highlight
+" when after changing a theme
+nmap <leader>lf :so ~/.config/nvim/leap-config.lua<CR>
+
+" Enable folding with treesitter
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+
+colorscheme nightfox
+source ~/.vim/coc-keybindings.vim
+source ~/.config/nvim/telescope-config.lua
+source ~/.config/nvim/neotree-config.lua
+source ~/.config/nvim/gitsigns-config.lua
+source ~/.config/nvim/leap-config.lua
+source ~/.config/nvim/gruvbox.lua
+source ~/.config/nvim/bufferline.lua
